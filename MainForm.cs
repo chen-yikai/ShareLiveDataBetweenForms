@@ -28,5 +28,10 @@ namespace ShareLiveVar
             SecondForm secondForm = new SecondForm();
             secondForm.Show();
         }
+
+        private void resetNumber_Click(object sender, EventArgs e)
+        {
+            ShareData.Count = 0;
+        }
     }
 }

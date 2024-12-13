@@ -34,13 +34,13 @@
             // 
             // number
             // 
-            this.number.AutoSize = true;
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number.Location = new System.Drawing.Point(214, 106);
+            this.number.Location = new System.Drawing.Point(109, 111);
             this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(83, 91);
+            this.number.Size = new System.Drawing.Size(291, 91);
             this.number.TabIndex = 0;
             this.number.Text = "0";
+            this.number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // increment
             // 
@@ -63,7 +63,6 @@
             this.Name = "SecondForm";
             this.Text = "SecondForm";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

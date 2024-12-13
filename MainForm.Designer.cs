@@ -31,12 +31,13 @@
             this.increment = new System.Windows.Forms.Button();
             this.number = new System.Windows.Forms.Label();
             this.openSecondForm = new System.Windows.Forms.Button();
+            this.resetNumber = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // increment
             // 
             this.increment.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.increment.Location = new System.Drawing.Point(183, 263);
+            this.increment.Location = new System.Drawing.Point(186, 259);
             this.increment.Name = "increment";
             this.increment.Size = new System.Drawing.Size(115, 56);
             this.increment.TabIndex = 3;
@@ -46,18 +47,18 @@
             // 
             // number
             // 
-            this.number.AutoSize = true;
             this.number.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.number.Location = new System.Drawing.Point(202, 88);
+            this.number.Location = new System.Drawing.Point(137, 97);
             this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(83, 91);
+            this.number.Size = new System.Drawing.Size(219, 84);
             this.number.TabIndex = 2;
             this.number.Text = "0";
+            this.number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openSecondForm
             // 
             this.openSecondForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openSecondForm.Location = new System.Drawing.Point(98, 383);
+            this.openSecondForm.Location = new System.Drawing.Point(97, 448);
             this.openSecondForm.Name = "openSecondForm";
             this.openSecondForm.Size = new System.Drawing.Size(299, 56);
             this.openSecondForm.TabIndex = 4;
@@ -65,18 +66,29 @@
             this.openSecondForm.UseVisualStyleBackColor = true;
             this.openSecondForm.Click += new System.EventHandler(this.openSecondForm_Click);
             // 
+            // resetNumber
+            // 
+            this.resetNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetNumber.Location = new System.Drawing.Point(97, 377);
+            this.resetNumber.Name = "resetNumber";
+            this.resetNumber.Size = new System.Drawing.Size(299, 56);
+            this.resetNumber.TabIndex = 5;
+            this.resetNumber.Text = "Reset Number";
+            this.resetNumber.UseVisualStyleBackColor = true;
+            this.resetNumber.Click += new System.EventHandler(this.resetNumber_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 469);
+            this.ClientSize = new System.Drawing.Size(494, 524);
+            this.Controls.Add(this.resetNumber);
             this.Controls.Add(this.openSecondForm);
             this.Controls.Add(this.increment);
             this.Controls.Add(this.number);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -85,6 +97,7 @@
         private System.Windows.Forms.Button increment;
         private System.Windows.Forms.Label number;
         private System.Windows.Forms.Button openSecondForm;
+        private System.Windows.Forms.Button resetNumber;
     }
 }
 
