@@ -15,7 +15,7 @@ namespace ShareLiveVar
         public MainForm()
         {
             InitializeComponent();
-            ShareData.DataEvent += () => number.Text = ShareData.Count.ToString();
+            ShareData.DataEvent += () => number.Text = ShareData.Count.ToString(); // 註冊DataEvent事件，當DataEvent事件被觸發時，更新共享數字
         }
 
         private void increment_Click(object sender, EventArgs e)
